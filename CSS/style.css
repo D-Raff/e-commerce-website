@@ -69,7 +69,7 @@ main{
 }
 
 .navItem img{
-    width: 20px;
+    width: 1rem;
     aspect-ratio: 1/1;
 }
 .navItem:hover{
