@@ -6,11 +6,16 @@
     box-sizing: border-box;
 }
 
-body{
+.homebg{
     background-image: url(https://i.postimg.cc/V65dVRqv/Need-for-Speed-Payback-Screenshot-2019-01-05-18-14-13-22.png);
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
 }
 
 .logo{
@@ -73,7 +78,7 @@ form :is(input, button){
 
 .welcomeBox{
     position: relative;
-    top: 7em;
+    top: 6em;
     right: 1em;
     font-size: 2rem;
     color: white;
@@ -98,7 +103,94 @@ form :is(input, button){
     color: navy;
 }
 
+#searchbar{
+    display: flex;
+    justify-content: center;
+}
+
+#searchbar input{
+    background-color: gray;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+}
+
+input::placeholder{
+    color: red;
+}
+
 #searchbar button{
-    border-radius: 10px;
-    padding-left: 0;
+    background-color: blue;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+}
+
+footer{
+    height: 20vh;
+    background-color: black;
+}
+
+
+
+
+.aboutbg{
+    background-image: url(https://i.postimg.cc/Xqzs3LXX/Need-for-Speed-Payback-Screenshot-2019-01-03-20-24-38-53.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+#mainAbout{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aboutCard{
+    width: 350px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0); */
+    margin: 0 3vw;
+}
+
+.cardContent{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    padding: 0.4em 1.5em;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border: 10px;
+    transform: scale(0.9);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+    overflow: hidden;
+    transition: all .4s;
+    border-radius: 30px;
+    /* float: right; */
+}
+
+.cardContent{
+    font-size: 0.8em;
+}
+
+.cardContent h1{
+    margin-bottom: 20px;
+}
+
+.cardContent:hover{
+    height: 250px;
+}
+
+.aboutCard:hover .cardContent{
+    height: 250px;
+}
+.perf{
+    text-decoration: underline blue 2px;
 }
