@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+
+footer{
+    height: 20vh;
+    background-color: black;
+}
+
+.Shop{
+    background-image: url(https://i.postimg.cc/sf7MYPks/Need-for-Speed-Payback-Screenshot-2019-07-20-17-11-40-97.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#shopNav{
+    position: static;
+    display: flex;
+    background-color: black;
+    height: 3.5rem;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    /* the logo will stay in the same position for the length of the page and allow you to move to the top of the page */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 60px;
+    padding: 0px;
+    z-index: 1;
+}
+
+.navmenu ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    /* right: 0; */
+}
+
+.navItem{
+    text-decoration: none;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.navItem img{
+    width: 1rem;
+    aspect-ratio: 1/1;
+}
+
+.navItem:hover{
+    box-shadow: 3px 3px 3px red;
+}
+
+#searchbar{
+    display: flex;
+    justify-content: center;
+}
+
+#searchbar input{
+    background-color: gray;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+    margin: 0;
+}
+
+input::placeholder{
+    color: red;
+}
+
+#searchbar button{
+    background-color: blue;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    margin: 0;
+}
