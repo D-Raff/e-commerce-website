@@ -66,6 +66,7 @@ main{
 footer{
     height: 20vh;
     background-color: black;
+    width: 100vw;
 }
 
 /* nav menu  */
