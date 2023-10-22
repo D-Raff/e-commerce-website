@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="about">
+<html lang="en" class="checkout">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/test.css" />
   </head>
   <body>
     <header>
@@ -48,7 +49,7 @@
               >
             </li>
             <li>
-              <a href="./itemTests.html" class="navItem"
+              <a href="./Checkout.html" class="navItem"
                 ><img
                   src="https://i.postimg.cc/SRCRD6SD/2t3vkalr850lipcvco1i6t11t8-bd1604ef2e708fbb5b6607d2e2b967a6.png"
                   alt="image"
@@ -68,39 +69,40 @@
       </nav>
     </header>
 
-    <main id="mainAbout">
-      <!-- hover over these for more information -->
-      <div class="aboutCard">
-        <div class="cardContent">
-          <h2>Who We Are</h2>
-          <p>
-            Wolfspeed is a company run by born and bred speed demons, racers,
-            engineers and designers; All of whom work in unison to create a
-            brand that is dedicated to excellence, customer satisfaction,
-            precision and most of all, <span class="perf">performance</span>.
-          </p>
-          <p>
-            We take pride in our ability to deliver quick and efficient results without a compromise in quality.
-            Some of our biggest design projects are displayed on our backgrounds as verification of our skills as a Design House. 
-          </p>
-        </div>
+    <main class="checkoutMain">
+      
+      <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="address">Shipping Address</label>
+          <textarea id="address" name="address" required></textarea>
+
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" name="card-number" required />
+
+          <label for="expiration">Expiration Date</label>
+          <input
+            type="text"
+            id="expiration"
+            name="expiration"
+            placeholder="MM/YY"
+            required
+          />
+
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" required />
+
+          <button type="submit">Submit Payment</button>
+        </form>
       </div>
-      <div class="whyCard">
-        <div class="cardContent2">
-          <h2>Why We Do This</h2>
-          <p>
-            We wanted to be the first workshop in South Africa to provide a service for every need in the car community; everything from scheduled servicing and detailing to building full race cars meeting the customer's every demand.  
-          </p>
-          <p>
-             We noticed that most racecars have to sacifice in looks or comfort for performance, we aim to build cars with a balance betweeen all 3, to allow our cars to be road-legal yet race-ready.
-          </p>
-        </div>
-      </div>
-      <!-- end of hover cards -->
     </main>
 
-    <footer id="footer">
-        
-    </footer>
+    <footer id="footer"></footer>
   </body>
 </html>
